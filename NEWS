@@ -1,0 +1,131 @@
+32
+
+* added missing tooltip to sensor interval spinner (#2121)
+* updated depreciated activity.info fields (#2178)
+
+31
+* avoid race condition that leads to image capture corruption (#2119) (thanks to quozl)
+* eliminate exception handler for tooltip text (#2121)
+* increment capture file id in Journal (#2120)
+* simplified Journal interactions (#2124)
+* disabling sharing until sharing works again (#2123)
+
+30
+* eliminate dependency on amixer (thanks to Sascha Silbe)
+* tweaked parameters for XO 1.5
+* cleaned up code for non-OLPC hardware
+* eliminate sensor toolbar for non-XO hardware
+* improved hardware-detection logic
+* added 1/10 second sample interval for sensor data
+* added additional bias control for sensor data
+* added tooltips for sliders (thanks to POSSE team)
+* improved labels for capture intervals (thanks to POSSE team)
+* added support for new toolbars
+* moved frequency slider to main toolbar
+* fixed problem with overcrowded toolbar preventing trigger control to appear
+* new .es translations (thanks to rgs)
+
+29
+* support for XO 1.5 (thanks to Sayamindu Dasgupta)
+
+28
+* numerous patches to speed up code by Benjamin and Sebastian Berg
+
+27
+* added exception handling for gconf for old builds
+
+26
+* fixed toolbar display bug
+* cleaned up sound record code
+* caught exception causing resume from journal crash
+* added display of sample value to toolbar
+
+25
+* Added invert button to invert time-based waveform
+* Work around alsa problem on non-XO hardware that was preventing launch
+
+24
+
+23
+
+21
+* #8683 Fixed minor sensor logging problem
+
+20
+* Added license information
+
+19
+* New usage context based UI - sound and sensors context
+* In sound context recording takes screenshots of waveforms and creates journal entries
+* In sensors context recording writes csv values and creates journal entry 
+* Textbox at bottom to show prompts for easy usage
+* New even lower frequency display in sound context for 25hz waveforms
+* Waveform color is XO stroke color
+* Major changes in codebase from ver18 to make it easily extensible from a dev point of view
+* Supports upto 4 simultaneous waveforms display by specifying start and end co-ordinates
+
+18
+* Fixed changing Numeric to numpy
+* Updated translations 	
+17
+
+* New translations (Pootle)
+* Bitfrost compliant (Logging works now) #6436
+
+16
+
+* New translations added via Pootle - pl, te, mn, ff_AF, ff, bg, ca 
+
+15
+
+* New translations added via Pootle
+
+14
+
+* (Note : This release doesn't comply with Bitfrost. Please see AnalogInput.py to correct that)
+* Revisited Journal Integration - now scale, mode etc. are also written in logfile
+* Details show/hide added - rms, avg, X Axis scale and Y Axis scale are visible
+* Fixed #3616 by making the Activity wait for ,active = True to fire before trying to get hold of the sound device
+* Increased gain slider sensitivity, also disabled Mic Boost throughout Activity
+
+13
+
+* Changing sampling rate from ALSA rather than using downsampling in code
+* Frequency slider now takes three discrete values
+* Faster background drawing method 
+* Code cleanup
+* Fixed Activity not calling on_quit when quitting.
+
+12
+
+* Fixed #4444 by disabling the gobject.timeout when activity is inactive that queues up the expose drawing event
+
+11
+
+* Fixed and closed #3666
+
+10
+
+* Fixed sound related problem by turning up Master and PCM high on exit (closed #3481)
+
+9
+
+
+* Code modified to match Alsacontrol name 'DC Mode Enable'
+* UI refinement and improvement
+* Fixed loud feedback problem
+
+
+8
+
+* No change from version 7.
+
+7
+
+* Fix NEWS file
+  NEWS files should be appended to for every major change and the setup
+  will take care of adding the version when releasing
+
+6
+
+* Initial release

@@ -1,0 +1,9 @@
+[Activity]
+name = Crikey
+bundle_id = org.laptop.community.Crikey
+exec = sugar-activity measure.MeasureActivity
+icon = activity-measure
+activity_version = 61
+show_launcher = yes
+license = GPLv2+
+update_url = http://wiki.laptop.org/go/Activities/G1G1
